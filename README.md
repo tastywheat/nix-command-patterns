@@ -2,9 +2,10 @@
 
 ### Search and replace
 ```
-grep -rl baby . | xargs sed -i '' 's/baby/BABY/g'
+grep -rl components2 . | grep .js$ | xargs sed -i '' 's/components2/components/g'
 ```
 - grep, (r) recursive, (l) pathname only
+- grep only .js files
 - xargs to enumerate input
 - sed to edit file in place
 
