@@ -46,3 +46,9 @@ sed -i '' '/START_HERE/a\
 ```
 echo "fooBar" | perl -pe 's/([A-B])/\l$1/'
 ```
+### List files with tr and cut
+```
+ls -l | tr -s ' ' | cut -d ' ' -f 9
+```
+- tr will squash spaces
+- cut to split on space, and select column 9
