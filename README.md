@@ -46,6 +46,7 @@ sed -i '' '/START_HERE/a\
 ```
 echo "fooBar" | perl -pe 's/([A-Z])/\l$1/g'
 ```
+- perl expression must use single quotes
 ### List files with tr and cut
 ```
 ls -l | tr -s ' ' | cut -d ' ' -f 9
