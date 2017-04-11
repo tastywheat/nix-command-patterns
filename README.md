@@ -44,7 +44,7 @@ sed -i '' '/START_HERE/a\
 ```
 ### Lowercase an uppercase letter with perl
 ```
-echo "fooBar" | perl -pe 's/([A-B])/\l$1/'
+echo "fooBar" | perl -pe 's/([A-Z])/\l$1/g'
 ```
 ### List files with tr and cut
 ```
