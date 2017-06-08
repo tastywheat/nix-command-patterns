@@ -18,6 +18,10 @@ find . -name "*.js"
 ls . | grep .js
 ```
 - non-recursive
+```
+grep --include=*.js 'sometext' somedirectory
+```
+- using include
 
 ### Interpolate template file
 ```
